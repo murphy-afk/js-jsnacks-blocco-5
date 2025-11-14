@@ -30,8 +30,10 @@ zucchine.forEach((zucchina) => {
   // (zucchina.length >= 15) ? zucchineLong.push(zucchina) : zucchineShort.push(zucchina);
   (zucchina.length >= 15 ? zucchineLong : zucchineShort).push(zucchina);
 });
+console.log(zucchineShort, zucchineLong);
 
-// works but is not ideal 
+
+// technically works but is bad practice
 const shortTwo = [];
 const longTwo = zucchine.filter((element) => {
   if (element.length >= 15) return true;
